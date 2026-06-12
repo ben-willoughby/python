@@ -1,5 +1,3 @@
-# This script is one I wrote for work to import excel time entries into my outlook calendar, so I can add to the internal timesheet system easier
-
 import pandas as pd
 import win32com.client
 from datetime import datetime, timedelta
@@ -31,7 +29,6 @@ except Exception:
     print(f"Error: Calendar '{calendar_name}' not found")
     print("Check the exact name in Outlook.")
     sys.exit(1)
-
 
 # read spreadsheet
 df = pd.read_excel(timesheet_path)
